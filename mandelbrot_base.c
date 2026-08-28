@@ -44,10 +44,32 @@ void calcular_cor(unsigned char *imagem, int linha, int largura, int altura, int
 
 }
 
+int gera_pgm(unsigned char *imagem, int largura, int altura, char *nome) {
+
+    FILE *arquivo = fopen(nome, "w");
+
+    if (arquivo == NULL) {
+        return 1;
+    }
+
+    for (int linha = 0; linha < altura; linha++) {
+        for (int coluna = 0; coluna < largura; coluna++) {
+            int posicao_lista = linha * largura + coluna;
+            fprintf(arquivo, "%d ", imagem[posicao_lista]);
+        }
+        fprintf(arquivo, "\n");
+    }
+
+    fclose(arquivo);
+
+    return 0;
+
+}
+
 int main(int argc, char *argv[]){
 
     if (argc != 5) {
-        fprintf(stderr, "Erro insira mandelbrot largura altura iterações threads ");
+        fprintf(stderr, "Erro insira mandelbrot largura altura iterações threads\n");
         return 1;
     }
 
@@ -58,7 +80,7 @@ int main(int argc, char *argv[]){
 
     if (largura <= 0 || altura <= 0 || max_iteracao <= 0 || qtd_threads <= 0) {
 
-        fprintf(stderr, "Passe apenas numeros positivos ");
+        fprintf(stderr, "Passe apenas numeros positivos\n");
         return 1;
 
     }
@@ -67,7 +89,7 @@ int main(int argc, char *argv[]){
     unsigned char *imagem = malloc((size_t) largura * altura * sizeof(unsigned char));
 
     if (imagem == NULL) {
-        fprintf(stderr, "Criacao da imagem falhou ");
+        fprintf(stderr, "Criacao da imagem falhou\n");
         return 1;
     }
 
@@ -81,7 +103,29 @@ int main(int argc, char *argv[]){
 
     clock_gettime(CLOCK_MONOTONIC, &fim);
 
+    int retorno_gerar = gera_pgm(imagem, largura, altura, "mandelbrot_lhass_serial.pgm");
+
+    if (retorno_gerar != 0) {
+        fprintf(stderr, "Erro ao gerar pgm\n");
+        free(imagem);
+        return 1;
+    }
+
     double tempo_gasto = (fim.tv_sec - inicio.tv_sec) + ((fim.tv_nsec - inicio.tv_nsec) / 1e9);
 
-    printf("%f", tempo_gasto);
+    FILE *arquivo_tempo = fopen("times.txt", "a");
+
+    if (arquivo_tempo == NULL) {
+        fprintf(stderr, "Erro ao abrir times.txt\n");
+        free(imagem);
+        return 1;
+    }
+
+    fprintf(arquivo_tempo, "serial tempo: %f\n", tempo_gasto);
+    fclose(arquivo_tempo);
+
+    free(imagem);
+
+    return 0;
+
 }

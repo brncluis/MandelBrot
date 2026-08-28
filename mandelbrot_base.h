@@ -5,4 +5,6 @@ int mandelbrot_ponto(double c_real, double c_imag, int max_iteracao);
 
 void calcular_cor(unsigned char *imagem, int linha, int largura, int altura, int max_iteracao);
 
+int gera_pgm(unsigned char *imagem, int largura, int altura, char *nome);
+
 #endif
