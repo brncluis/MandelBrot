@@ -7,3 +7,24 @@ Script started on 2026-08-27 21:15:23-03:00 [TERM="xterm-256color" TTY="/dev/pts
 exit
 
 Script done on 2026-08-27 21:19:04-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-28 21:04:55-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="191" LINES="13"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_2000 2[K[K[K 200 500
+[?2004lbash: ./mandelbrot_200: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_[K [K_openmp [K[K[K[K[K[K[K[K_[K_[K_openmp 200 200 500
+[?2004lErro insira mandelbrot largura altura iterações threads
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K./mandelbrot_[K sd sd sd 
+[?2004lbash: ./mandelbrot: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K./mandelbrot_[Kmandelbrot__op[K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot__op[K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot__open[K[K[K[K[K[K_mand[K[K[K[Kopenmp 200 200 500 4
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_[Kmandelbrot_se[K[K[K_seial 200 200 500 1
+[?2004lbash: ./mandelbrot_seial: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ , [K[K./mandelbrot__serial 200 200 500 1
+[?2004lbash: ./mandelbrot__serial: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K,/[K[K./mandelbrot_serial 2-[K00 200 500 1
+[?2004lbash: ./mandelbrot_serial: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c ma[K[K[K mandelbrot_serial.c mandelbrot__[K[K_serial.c [K[K[K [K
+[?2004l/usr/bin/x86_64-linux-gnu-ld.bfd: /tmp/ccc6zBfA.o: in function `main':
+mandelbrot_serial.c:(.text+0x0): multiple definition of `main'; /tmp/ccBX0ylO.o:mandelbrot_openmp.c:(.text+0x0): first defined here
+/usr/bin/x86_64-linux-gnu-ld.bfd: cannot find mandelbrot_serial: No such file or directory
+collect2: error: ld returned 1 exit status
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
