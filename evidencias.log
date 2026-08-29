@@ -1,69 +1,365 @@
 Script started on 2026-08-27 21:15:23-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="101" LINES="13"]
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -o teste_tempo debug_tempo.c[27mgcc -Wall -o teste_tempo debug_tempo.c=[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K-Wall mandelbrot_base.o [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K-o mandelbrot_base.o mandelbrot_base.c
-[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_base. 2000 2000 4000 1
-[?2004l]133;C\]666;vte.shell.preexec!\15.482778]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ cd [K[K[Kcd .[K[K[K[K
-[?2004l]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ cl[K[Kclear
-[?2004l]133;C\]666;vte.shell.preexec!\[H[2J[3J]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [?2004l
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_base. 2000 2000 4000 1
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\15.482778]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ cd [K[K[Kcd .[K[K[K[K
+[?2004l
+]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ cl[K[Kclear
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\[H[2J[3J]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [?2004l
+
 exit
 
 Script done on 2026-08-27 21:19:04-03:00 [COMMAND_EXIT_CODE="0"]
 Script started on 2026-08-28 21:04:55-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="191" LINES="13"]
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
-[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_2000 2[K[K[K 200 500
-[?2004lbash: ./mandelbrot_200: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
+[?2004l
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_2000 2[K[K[K 200 500
+[?2004l
+bash: ./mandelbrot_200: No such file or directory
 [?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_[K [K_openmp [K[K[K[K[K[K[K[K_[K_[K_openmp 200 200 500
-[?2004lErro insira mandelbrot largura altura iterações threads
+[?2004l
+Erro insira mandelbrot largura altura iterações threads
 [?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K./mandelbrot_[K sd sd sd 
-[?2004lbash: ./mandelbrot: No such file or directory
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K./mandelbrot_[Kmandelbrot__op[K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot__op[K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot__open[K[K[K[K[K[K_mand[K[K[K[Kopenmp 200 200 500 4
-[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_[Kmandelbrot_se[K[K[K_seial 200 200 500 1
-[?2004lbash: ./mandelbrot_seial: No such file or directory
+[?2004l
+bash: ./mandelbrot: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K./mandelbrot_[Kmandelbrot__op
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot__op
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot__open[K[K[K[K[K[K_mand[K[K[K[Kopenmp 200 200 500 4
+[?2004l
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_[Kmandelbrot_se[K[K[K_seial 200 200 500 1
+[?2004l
+bash: ./mandelbrot_seial: No such file or directory
 [?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ , [K[K./mandelbrot__serial 200 200 500 1
-[?2004lbash: ./mandelbrot__serial: No such file or directory
+[?2004l
+bash: ./mandelbrot__serial: No such file or directory
 [?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K,/[K[K./mandelbrot_serial 2-[K00 200 500 1
-[?2004lbash: ./mandelbrot_serial: No such file or directory
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c ma[K[K[K mandelbrot_serial.c mandelbrot__[K[K_serial.c [K[K[K [K
-[?2004l/usr/bin/x86_64-linux-gnu-ld.bfd: /tmp/ccc6zBfA.o: in function `main':
+[?2004l
+bash: ./mandelbrot_serial: No such file or directory
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c ma[K[K[K mandelbrot_serial.c mandelbrot__[K[K_serial.c [K[K[K [K
+[?2004l
+/usr/bin/x86_64-linux-gnu-ld.bfd: /tmp/ccc6zBfA.o: in function `main':
 mandelbrot_serial.c:(.text+0x0): multiple definition of `main'; /tmp/ccBX0ylO.o:mandelbrot_openmp.c:(.text+0x0): first defined here
 /usr/bin/x86_64-linux-gnu-ld.bfd: cannot find mandelbrot_serial: No such file or directory
 collect2: error: ld returned 1 exit status
-[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KScript started on 2026-08-29 13:41:21-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="133" LINES="15"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7mgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KScript started on 2026-08-29 13:41:21-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="133" LINES="15"]
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make
-[?2004l]133;C\]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
 gcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K./mandelbrot_openmp 200 200 50000 4
-[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,m[K[K.m[Kq[K/mandelbrot_ 200 200 5000 4
-[?2004l]133;C\]666;vte.shell.preexec!\bash: ./mandelbrot_: No such file or directory
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,m[K[K.m[Kq[K/mandelbrot_ 200 200 5000 4
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\bash: ./mandelbrot_: No such file or directory
 ]666;vte.shell.postexec=127\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,m[K[K./mandelbrot_openmp 200 200 5000 4
-[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$  [K[K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_openmp 2000 2000 50000 4
-[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_openmp 20000 20000 50000[K[K[K[K[K100000 4[K8
-[?2004l]133;C\]666;vte.shell.preexec!\d ^C
-]666;vte.shell.postexec=130\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ^C[?2004l[?2004h[?2004l
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$  [K
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_openmp 2000 2000 50000 4
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_openmp 20000 20000 50000[K[K[K[K[K100000 4[K8
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\d ^C
+]666;vte.shell.postexec=130\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ^C[?2004l
+[?2004h[?2004l
+
 ]666;vte.shell.postexec=130\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make clean]
-[?2004l]133;C\]666;vte.shell.preexec!\make: *** No rule to make target 'clean]'.  Stop.
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\make: *** No rule to make target 'clean]'.  Stop.
 ]666;vte.shell.postexec=2\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make clean
-[?2004l]133;C\]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp *.pgm times.txt
-]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make clean
-[?2004l]133;C\]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp *.pgm times.txt
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp *.pgm times.txt
+]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make clean
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp *.pgm times.txt
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make clean
-[?2004l]133;C\]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp *.pgm times.txt
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp *.pgm times.txt
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K./mandelbrot_base.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake
-[?2004l]133;C\]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
 gcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,[K./mandelbrot_[K[K[K[K[K[K[K[K[K[K[K[K[Kmake clean
-[?2004l]133;C\]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp *.pgm times.txt
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp *.pgm times.txt
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_base.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake
-[?2004l]133;C\]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
 gcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
 gcc -Wall -Wextra -o mandelbrot_pthreads1 mandelbrot_pthreads1.c mandelbrot_base.c -lpthread
 gcc -Wall -Wextra -o mandelbrot_pthreads2 mandelbrot_pthreads2.c mandelbrot_base.c -lpthread
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make clean
-[?2004l]133;C\]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp mandelbrot_pthreads1 mandelbrot_pthreads2 *.pgm times.txt
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp mandelbrot_pthreads1 mandelbrot_pthreads2 *.pgm times.txt
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make
-[?2004l]133;C\]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
 gcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
 gcc -Wall -Wextra -o mandelbrot_pthreads1 mandelbrot_pthreads1.c mandelbrot_base.c -lpthread
 gcc -Wall -Wextra -o mandelbrot_pthreads2 mandelbrot_pthreads2.c mandelbrot_base.c -lpthread
 ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_pthreads2 2000 2000 5000 8
-[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_ph[K[Kpthreads1 2000 2000 5000 6[K7[K8
-[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_serial  [K [K[K 2--[K
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_ph[K[Kpthreads1 2000 2000 5000 6[K7[K8
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_serial  [K [K[K 2--[K[K000 2000 5000 1
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_openmp 2000 2000 5000 8
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make clean
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp mandelbrot_pthreads1 mandelbrot_pthreads2 *.pgm times.txt
+]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
+gcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
+gcc -Wall -Wextra -o mandelbrot_pthreads1 mandelbrot_pthreads1.c mandelbrot_base.c -lpthread
+gcc -Wall -Wextra -o mandelbrot_pthreads2 mandelbrot_pthreads2.c mandelbrot_base.c -lpthread
+]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make[K[K[K[K./m,[Kandelbrot_serial 2000[K[K[K[K3000 3000 5000[K 1
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\. ]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_openmp 3000 3000 5000[K 8
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_openmp 3000 3000 500 8[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpthreads1 [K 399[K[K000 3000 500 8
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_pthreads2 3000 3000 500 8
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ git add .[K[K[K[K[K[K[K[K[Kgit add .
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ git commit -m "criacao do makefile, criacao dos ph[Kthreads, c[Kajuste do openmp, [K[K [Km,[K[K [K, [K a[Kcriacao do gitignore para [K[K[K[K[K[K"
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\[main 2f8e5f2] criacao do makefile, criacao dos pthreads, ajuste do openmp, criacao do gitignore
+ 6 files changed, 329 insertions(+), 2 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 mandelbrot_pthreads1.c
+ create mode 100644 mandelbrot_pthreads2.c
+]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ git push
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\Enumerating objects: 12, done.
+Counting objects:   8% (1/12)
+Counting objects:  16% (2/12)
+Counting objects:  25% (3/12)
+Counting objects:  33% (4/12)
+Counting objects:  41% (5/12)
+Counting objects:  50% (6/12)
+Counting objects:  58% (7/12)
+Counting objects:  66% (8/12)
+Counting objects:  75% (9/12)
+Counting objects:  83% (10/12)
+Counting objects:  91% (11/12)
+Counting objects: 100% (12/12)
+Counting objects: 100% (12/12), done.
+Delta compression using up to 16 threads
+Compressing objects:  12% (1/8)
+Compressing objects:  25% (2/8)
+Compressing objects:  37% (3/8)
+Compressing objects:  50% (4/8)
+Compressing objects:  62% (5/8)
+Compressing objects:  75% (6/8)
+Compressing objects:  87% (7/8)
+Compressing objects: 100% (8/8)
+Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)
+Writing objects:  25% (2/8)
+Writing objects:  37% (3/8)
+Writing objects:  62% (5/8)
+Writing objects:  75% (6/8)
+Writing objects: 100% (8/8)
+Writing objects: 100% (8/8), 3.74 KiB | 3.74 MiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/3)[K
+remote: Resolving deltas:  33% (1/3)[K
+remote: Resolving deltas:  66% (2/3)[K
+remote: Resolving deltas: 100% (3/3)[K
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.[K
+To https://github.com/brncluis/MandelBrot.git
+   1e39cbe..2f8e5f2  main -> main
+]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make clean
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\rm -f mandelbrot_serial mandelbrot_openmp mandelbrot_pthreads1 mandelbrot_pthreads2 *.pgm times.txt
+]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ na[K[Kmake
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\gcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
+gcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
+gcc -Wall -Wextra -o mandelbrot_pthreads1 mandelbrot_pthreads1.c mandelbrot_base.c -lpthread
+gcc -Wall -Wextra -o mandelbrot_pthreads2 mandelbrot_pthreads2.c mandelbrot_base.c -lpthread
+]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ./mandelbrot_serial 200[K 20 0[K50 1
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ,/[K[K./mandelbrot_[K 20 20 30 4
+[?2004l
+]133;C\
+]666;vte.shell.preexec!\bash: ./mandelbrot: No such file or directory
+]666;vte.shell.postexec=127\]7;file://luisdesktop/home/brncluis/Projetos/MandelBrot\]0;brncluis@luisdesktop:~/Projetos/MandelBrot\]666;vte.shell.precmd!\[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ git [K[K[K[K
+[K
+]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ 
+Script done on 2026-08-29 16:10:33-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-29 16:18:23-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="151" LINES="15"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make
+[?2004lmake: Nothing to be done for 'all'.
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make clean
+[?2004lrm -f mandelbrot_serial mandelbrot_openmp mandelbrot_pthreads1 mandelbrot_pthreads2 *.pgm times.txt
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ make
+[?2004lgcc -Wall -Wextra -o mandelbrot_serial mandelbrot_serial.c mandelbrot_base.c
+gcc -Wall -Wextra -fopenmp -o mandelbrot_openmp mandelbrot_openmp.c mandelbrot_base.c
+gcc -Wall -Wextra -o mandelbrot_pthreads1 mandelbrot_pthreads1.c mandelbrot_base.c -lpthread
+gcc -Wall -Wextra -o mandelbrot_pthreads2 mandelbrot_pthreads2.c mandelbrot_base.c -lpthread
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [H[2J]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ cat > /tmp/gabarito1.txt << 'EOF'
+5 10 10 10
+5 15 30 25
+255 255 255 255
+5 15 30 25
+EOF
+
+cat > /tmp/gabarito2.txt << 'EOF'
+8 8 17 17 17 17
+[7m8 17 25 34 255 17[27m
+[7m8 25 42 255 255 42[27m
+[7m255 255 255 255 255 42[27m
+[7m8 25 42 255 255 42[27m
+[7m8 17 25 34 255 17[27m
+[7mEOF[27m
+
+[7mcat > /tmp/gabarito3.txt << 'EOF'[27m
+[7m6 6 6 12 12 12 12 12 12 12[27m
+[7m6 12 19 19 19 25 44 25 19 12[27m
+[7m6 19 19 31 38 255 255 255 44 19[27m
+[7m255 255 255 255 255 255 255 255 44 19[27m
+[7m6 19 19 31 38 255 255 255 44 19[27m
+[7m6 12 19 19 19 25 44 25 19 12[27m
+[7mEOF[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A8 17 25 34 255 17
+8 25 42 255 255 42
+255 255 255 255 255 42
+8 25 42 255 255 42
+8 17 25 34 255 17
+EOF
+
+cat > /tmp/gabarito3.txt << 'EOF'
+6 6 6 12 12 12 12 12 12 12
+6 12 19 19 19 25 44 25 19 12
+6 19 19 31 38 255 255 255 44 19
+255 255 255 255 255 255 255 255 44 19
+6 19 19 31 38 255 255 255 44 19
+6 12 19 19 19 25 44 25 19 12
+EOF
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [7m./mandelbrot_serial 4 4 50 1[27m
+[7mdiff mandelbrot_lhass_serial.pgm /tmp/gabarito1.txt && echo "TESTE 1 OK"[27m
+
+[7m./mandelbrot_openmp 6 6 30 3[27m
+[7mdiff mandelbrot_lhass_openmp.pgm /tmp/gabarito2.txt && echo "TESTE 2 OK"[27m
+
+[7m./mandelbrot_pthreads1 10 6 40 4[27m
+[7mdiff mandelbrot_lhass_pthreads1.pgm /tmp/gabarito3.txt && echo "TESTE 3 OK"[27m[A[A[A[A[A[A[A./mandelbrot_serial 4 4 50 1
+diff mandelbrot_lhass_serial.pgm /tmp/gabarito1.txt && echo "TESTE 1 OK"
+
+./mandelbrot_openmp 6 6 30 3
+diff mandelbrot_lhass_openmp.pgm /tmp/gabarito2.txt && echo "TESTE 2 OK"
+
+./mandelbrot_pthreads1 10 6 40 4
+diff mandelbrot_lhass_pthreads1.pgm /tmp/gabarito3.txt && echo "TESTE 3 OK"
+[?2004lTESTE 1 OK
+TESTE 2 OK
+TESTE 3 OK
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ maek [K[K[Kke clean
+[?2004lrm -f mandelbrot_serial mandelbrot_openmp mandelbrot_pthreads1 mandelbrot_pthreads2 *.pgm times.txt
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/MandelBrot[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/MandelBrot[00m$ [?2004l
+exit
+
+Script done on 2026-08-29 16:18:49-03:00 [COMMAND_EXIT_CODE="130"]
