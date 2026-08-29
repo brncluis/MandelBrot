@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
     struct timespec inicio, fim;
     clock_gettime(CLOCK_MONOTONIC, &inicio);
 
-    #pragma omp parallel for
+    #pragma omp parallel for num_threads(qtd_threads)
 
     for (int linha = 0; linha < altura; linha++) {
 

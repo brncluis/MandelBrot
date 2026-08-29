@@ -1,0 +1,7 @@
+*.o
+mandelbrot_serial
+mandelbrot_openmp
+mandelbrot_pthreads1
+mandelbrot_pthreads2
+*.pgm
+times.txt
