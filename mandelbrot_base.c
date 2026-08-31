@@ -1,7 +1,40 @@
 #include "mandelbrot_base.h"
 
-#include <stdio.h>      
-#include <stdlib.h>     
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <limits.h>
+
+int parse_inteiro_positivo(char *texto, int *saida) {
+
+    if (texto == NULL || texto[0] == '\0') {
+        return 1;
+    }
+
+    char *fim;
+    errno = 0;
+    long valor = strtol(texto, &fim, 10);
+
+    if (*fim != '\0' || errno == ERANGE || valor <= 0 || valor > INT_MAX) {
+        return 1;
+    }
+
+    *saida = (int) valor;
+    return 0;
+}
+
+void reportar_erro(char *mensagem) {
+
+    FILE *arquivo = fopen("erros.txt", "a");
+
+    if (arquivo == NULL) {
+        return;
+    }
+
+    fprintf(arquivo, "%s\n", mensagem);
+    fclose(arquivo);
+
+}
 
 int mandelbrot_ponto(double c_real, double c_imag, int max_iteracao) {
     double z_real = 0.0;
