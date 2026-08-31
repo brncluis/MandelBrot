@@ -42,29 +42,12 @@ void *thread_dinamica(void *arg) {
 
 }
 
-int main(int argc, char *argv[]){
-
-    if (argc != 5) {
-        fprintf(stderr, "Erro insira mandelbrot largura altura iterações threads\n");
-        return 1;
-    }
-
-    int largura = atoi(argv[1]);
-    int altura = atoi(argv[2]);
-    int max_iteracao = atoi(argv[3]);
-    int qtd_threads = atoi(argv[4]);
-
-    if (largura <= 0 || altura <= 0 || max_iteracao <= 0 || qtd_threads <= 0) {
-
-        fprintf(stderr, "Passe apenas numeros positivos\n");
-        return 1;
-
-    }
+int rodar_pthreads2(int largura, int altura, int max_iteracao, int qtd_threads) {
 
     unsigned char *imagem = malloc((size_t) largura * altura * sizeof(unsigned char));
 
     if (imagem == NULL) {
-        fprintf(stderr, "Criacao da imagem falhou\n");
+        reportar_erro("Criacao da imagem falhou (pthreads2)");
         return 1;
     }
 
@@ -72,8 +55,17 @@ int main(int argc, char *argv[]){
     pthread_mutex_t mutex;
     pthread_mutex_init(&mutex, NULL);
 
-    ArgsThreadsDinamico args[qtd_threads];
-    pthread_t threads[qtd_threads];
+    ArgsThreadsDinamico *args = malloc((size_t) qtd_threads * sizeof(ArgsThreadsDinamico));
+    pthread_t *threads = malloc((size_t) qtd_threads * sizeof(pthread_t));
+
+    if (args == NULL || threads == NULL) {
+        reportar_erro("Erro ao alocar memoria para as threads (pthreads2)");
+        free(args);
+        free(threads);
+        pthread_mutex_destroy(&mutex);
+        free(imagem);
+        return 1;
+    }
 
 
     struct timespec inicio, fim;
@@ -91,7 +83,10 @@ int main(int argc, char *argv[]){
     int retorno = pthread_create(&threads[i], NULL, thread_dinamica, &args[i]);
 
         if (retorno != 0) {
-            fprintf(stderr, "Erro ao criar thread\n");
+            reportar_erro("Erro ao criar thread (pthreads2)");
+            free(args);
+            free(threads);
+            pthread_mutex_destroy(&mutex);
             free(imagem);
             return 1;
         }
@@ -101,6 +96,9 @@ int main(int argc, char *argv[]){
         pthread_join(threads[i], NULL);
     }
 
+    free(args);
+    free(threads);
+
     pthread_mutex_destroy(&mutex);
 
     clock_gettime(CLOCK_MONOTONIC, &fim);
@@ -108,7 +106,7 @@ int main(int argc, char *argv[]){
     int retorno_gerar = gera_pgm(imagem, largura, altura, "mandelbrot_lhass_pthreads2.pgm");
 
     if (retorno_gerar != 0) {
-        fprintf(stderr, "Erro ao gerar pgm\n");
+        reportar_erro("Erro ao gerar pgm (pthreads2)");
         free(imagem);
         return 1;
     }
@@ -118,12 +116,12 @@ int main(int argc, char *argv[]){
     FILE *arquivo_tempo = fopen("times.txt", "a");
 
     if (arquivo_tempo == NULL) {
-        fprintf(stderr, "Erro ao abrir times.txt\n");
+        reportar_erro("Erro ao abrir times.txt (pthreads2)");
         free(imagem);
         return 1;
     }
 
-    fprintf(arquivo_tempo, "pthreads2 tempo: %f\n", tempo_gasto);
+    fprintf(arquivo_tempo, "Pthreads2: %fs\n", tempo_gasto);
     fclose(arquivo_tempo);
 
     free(imagem);
