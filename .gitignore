@@ -1,7 +1,5 @@
 *.o
-mandelbrot_serial
-mandelbrot_openmp
-mandelbrot_pthreads1
-mandelbrot_pthreads2
+mandelbrot
 *.pgm
 times.txt
+erros.txt
