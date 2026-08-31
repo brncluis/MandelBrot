@@ -6,29 +6,12 @@
 #include <stdlib.h>     
 #include <time.h>   
 
-int main(int argc, char *argv[]){
-
-    if (argc != 5) {
-        fprintf(stderr, "Erro insira mandelbrot largura altura iterações threads\n");
-        return 1;
-    }
-
-    int largura = atoi(argv[1]);
-    int altura = atoi(argv[2]);
-    int max_iteracao = atoi(argv[3]);
-    int qtd_threads = atoi(argv[4]);
-
-    if (largura <= 0 || altura <= 0 || max_iteracao <= 0 || qtd_threads <= 0) {
-
-        fprintf(stderr, "Passe apenas numeros positivos\n");
-        return 1;
-
-    }
+int rodar_openmp(int largura, int altura, int max_iteracao, int qtd_threads) {
 
     unsigned char *imagem = malloc((size_t) largura * altura * sizeof(unsigned char));
 
     if (imagem == NULL) {
-        fprintf(stderr, "Criacao da imagem falhou\n");
+        reportar_erro("Criacao da imagem falhou (openmp)");
         return 1;
     }
 
@@ -49,7 +32,7 @@ int main(int argc, char *argv[]){
     int retorno_gerar = gera_pgm(imagem, largura, altura, "mandelbrot_lhass_openmp.pgm");
 
     if (retorno_gerar != 0) {
-        fprintf(stderr, "Erro ao gerar pgm\n");
+        reportar_erro("Erro ao gerar pgm (openmp)");
         free(imagem);
         return 1;
     }
@@ -59,12 +42,12 @@ int main(int argc, char *argv[]){
     FILE *arquivo_tempo = fopen("times.txt", "a");
 
     if (arquivo_tempo == NULL) {
-        fprintf(stderr, "Erro ao abrir times.txt\n");
+        reportar_erro("Erro ao abrir times.txt (openmp)");
         free(imagem);
         return 1;
     }
 
-    fprintf(arquivo_tempo, "openMP tempo: %f\n", tempo_gasto);
+    fprintf(arquivo_tempo, "OpenMP: %fs\n", tempo_gasto);
     fclose(arquivo_tempo);
 
     free(imagem);
