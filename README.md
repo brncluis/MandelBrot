@@ -53,7 +53,7 @@ Compare a saída do programa contra o conteúdo esperado de um caso de teste:
 
 ```
 ./mandelbrot 4 4 50 1
-diff mandelbrot_lhass_serial.pgm esperado.txt
+diff mandelbrot_lhass_serial.pgm teste1_serial.txt
 ```
 
 Sem diferença impressa, a saída bate com o esperado.
