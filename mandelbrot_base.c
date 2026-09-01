@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <errno.h>
 #include <limits.h>
 
 int parse_inteiro_positivo(char *texto, int *saida) {
@@ -11,11 +10,23 @@ int parse_inteiro_positivo(char *texto, int *saida) {
         return 1;
     }
 
-    char *fim;
-    errno = 0;
-    long valor = strtol(texto, &fim, 10);
+    long valor = 0;
 
-    if (*fim != '\0' || errno == ERANGE || valor <= 0 || valor > INT_MAX) {
+    for (int i = 0; texto[i] != '\0'; i++) {
+
+        if (texto[i] < '0' || texto[i] > '9') {
+            return 1;
+        }
+
+        valor = valor * 10 + (texto[i] - '0');
+
+        if (valor > INT_MAX) {
+            return 1;
+        }
+
+    }
+
+    if (valor <= 0) {
         return 1;
     }
 

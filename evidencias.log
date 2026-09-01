@@ -363,3 +363,17 @@ TESTE 3 OK
 exit
 
 Script done on 2026-08-29 16:18:49-03:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2026-09-01 07:07:20-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="114" LINES="10"]
+[?2004h]0;brncluis@luistop: ~/MandelBrot[01;32mbrncluis@luistop[00m:[01;34m~/MandelBrot[00m$ make
+[?2004lgcc -Wall -Wextra -fopenmp -o mandelbrot mandelbrot.c mandelbrot_base.c mandelbrot_serial.c mandelbrot_openmp.c mandelbrot_pthreads1.c mandelbrot_pthreads2.c -lpthread
+[?2004h]0;brncluis@luistop: ~/MandelBrot[01;32mbrncluis@luistop[00m:[01;34m~/MandelBrot[00m$ make clean
+[?2004lrm -f mandelbrot *.pgm times.txt erros.txt
+[?2004h]0;brncluis@luistop: ~/MandelBrot[01;32mbrncluis@luistop[00m:[01;34m~/MandelBrot[00m$ make
+[?2004lgcc -Wall -Wextra -fopenmp -o mandelbrot mandelbrot.c mandelbrot_base.c mandelbrot_serial.c mandelbrot_openmp.c mandelbrot_pthreads1.c mandelbrot_pthreads2.c -lpthread
+[?2004h]0;brncluis@luistop: ~/MandelBrot[01;32mbrncluis@luistop[00m:[01;34m~/MandelBrot[00m$ ./mandelbrot_s[K[K 2000 2000 x [K[K5000[K[K[K[K3000 x[K8[C[C[1P[1P[1@2[1P[1@4[C[C[1@0[C[C[1@0[C[1P[C[C[C[C[1P[1@4
+[?2004l[?2004h]0;brncluis@luistop: ~/MandelBrot[01;32mbrncluis@luistop[00m:[01;34m~/MandelBrot[00m$ gi[K[Kmake clean
+[?2004lrm -f mandelbrot *.pgm times.txt erros.txt
+[?2004h]0;brncluis@luistop: ~/MandelBrot[01;32mbrncluis@luistop[00m:[01;34m~/MandelBrot[00m$ g[Kexit
+[?2004lexit
+
+Script done on 2026-09-01 07:16:10-03:00 [COMMAND_EXIT_CODE="0"]
