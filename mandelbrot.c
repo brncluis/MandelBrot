@@ -1,6 +1,20 @@
 #include "mandelbrot_base.h"
 
+#include <stdio.h>
+
 int main(int argc, char *argv[]) {
+
+    FILE *arquivo_times = fopen("times.txt", "w");
+ 
+        if (arquivo_times != NULL) {
+            fclose(arquivo_times);
+        }
+ 
+    FILE *arquivo_erros = fopen("erros.txt", "w");
+ 
+        if (arquivo_erros != NULL) {
+            fclose(arquivo_erros);
+        }
 
     if (argc != 5) {
         reportar_erro("Erro insira mandelbrot largura altura iteracoes threads");
