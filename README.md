@@ -6,11 +6,11 @@ Desenvolvido por Luis Alves
 
 ## Arquivos utilizados
 
-- `mandelbrot_base.h` / `mandelbrot_base.c` — funções compartilhadas pelas 4 implementações: validação de argumentos, cálculo do ponto no conjunto de Mandelbrot, cálculo de uma linha da imagem, e escrita do arquivo `.pgm`.
+- `mandelbrot_base.h` / `mandelbrot_base.c` — funções compartilhadas: validação de argumentos, cálculo do ponto no conjunto de Mandelbrot, cálculo de uma linha da imagem, e escrita do arquivo `.pgm` usada por serial, OpenMP e Pthreads1 — Pthreads2 escreve por conta própria, ver abaixo.
 - `mandelbrot_serial.c` — versão sequencial (`rodar_serial`).
 - `mandelbrot_openmp.c` — versão paralela com OpenMP (`rodar_openmp`).
 - `mandelbrot_pthreads1.c` — versão paralela com Pthreads, divisão estática de linhas entre threads (`rodar_pthreads1`).
-- `mandelbrot_pthreads2.c` — versão paralela com Pthreads, divisão dinâmica com fila protegida por mutex (`rodar_pthreads2`).
+- `mandelbrot_pthreads2.c` — cálculo 100% serial; a formatação do texto de saída é paralelizada entre `num_threads` threads, com fila dinâmica protegida por mutex (`rodar_pthreads2`). Não usa `gera_pgm()`.
 - `mandelbrot.c` — único `main` do programa: valida os argumentos e chama as 4 implementações acima em sequência.
 - `Makefile` — regra de compilação do executável único `mandelbrot` e limpeza dos arquivos gerados.
 

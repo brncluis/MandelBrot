@@ -2,40 +2,72 @@
 
 #include "mandelbrot_base.h"
 
-#include <stdio.h>      
-#include <stdlib.h>     
-#include <time.h> 
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #include <pthread.h>
 
 typedef struct {
     unsigned char *imagem;
     int largura;
     int altura;
-    int max_iteracao;
-    int *proxima_linha;
-    pthread_mutex_t *mutex;
-} ArgsThreadsDinamico;
+    char **linhas_texto;
+    int *proxima_linha_formato;
+    pthread_mutex_t *mutex_formato;
+} ArgsFormatacao;
 
-void *thread_dinamica(void *arg) {
+void formatar_linha(ArgsFormatacao *dados, int linha) {
 
-    ArgsThreadsDinamico *dados = (ArgsThreadsDinamico*)arg;
+    int largura = dados->largura;
+
+    char *buffer = malloc((size_t) largura * 4 + 2);
+
+    if (buffer == NULL) {
+        reportar_erro("Erro ao alocar memoria para formatar linha (pthreads2)");
+        return;
+    }
+
+    int pos = 0;
+
+    for (int coluna = 0; coluna < largura; coluna++) {
+
+        int valor = dados->imagem[linha * largura + coluna];
+        pos += sprintf(buffer + pos, "%d", valor);
+
+        if (coluna < largura - 1) {
+            buffer[pos++] = ' ';
+        }
+
+    }
+
+    buffer[pos++] = '\n';
+    buffer[pos] = '\0';
+
+    dados->linhas_texto[linha] = buffer;
+
+}
+
+void *thread_formatadora(void *arg) {
+
+    ArgsFormatacao *dados = (ArgsFormatacao *)arg;
 
     while (1) {
 
-        pthread_mutex_lock(dados->mutex);
+        pthread_mutex_lock(dados->mutex_formato);
 
-        int linha_atual = *dados->proxima_linha;
+        int linha = *dados->proxima_linha_formato;
 
-        if (linha_atual >= dados->altura) {
-            pthread_mutex_unlock(dados->mutex);
+        if (linha >= dados->altura) {
+            pthread_mutex_unlock(dados->mutex_formato);
             break;
         }
 
-        *dados->proxima_linha = linha_atual + 1;
+        *dados->proxima_linha_formato = linha + 1;
 
-        pthread_mutex_unlock(dados->mutex);
+        pthread_mutex_unlock(dados->mutex_formato);
 
-        calcular_cor(dados->imagem, linha_atual, dados->largura, dados->altura, dados->max_iteracao);
+        formatar_linha(dados, linha);
+
     }
 
     return NULL;
@@ -51,65 +83,87 @@ int rodar_pthreads2(int largura, int altura, int max_iteracao, int qtd_threads) 
         return 1;
     }
 
-    int proxima_linha = 0;
-    pthread_mutex_t mutex;
-    pthread_mutex_init(&mutex, NULL);
+    char **linhas_texto = calloc((size_t) altura, sizeof(char *));
 
-    ArgsThreadsDinamico *args = malloc((size_t) qtd_threads * sizeof(ArgsThreadsDinamico));
-    pthread_t *threads = malloc((size_t) qtd_threads * sizeof(pthread_t));
-
-    if (args == NULL || threads == NULL) {
-        reportar_erro("Erro ao alocar memoria para as threads (pthreads2)");
-        free(args);
-        free(threads);
-        pthread_mutex_destroy(&mutex);
+    if (linhas_texto == NULL) {
+        reportar_erro("Erro ao alocar memoria para linhas de texto (pthreads2)");
         free(imagem);
         return 1;
     }
 
-
     struct timespec inicio, fim;
     clock_gettime(CLOCK_MONOTONIC, &inicio);
 
+    for (int linha = 0; linha < altura; linha++) {
+        calcular_cor(imagem, linha, largura, altura, max_iteracao);
+    }
+
+    int proxima_linha_formato = 0;
+    pthread_mutex_t mutex_formato;
+    pthread_mutex_init(&mutex_formato, NULL);
+
+    ArgsFormatacao dados;
+    dados.imagem = imagem;
+    dados.largura = largura;
+    dados.altura = altura;
+    dados.linhas_texto = linhas_texto;
+    dados.proxima_linha_formato = &proxima_linha_formato;
+    dados.mutex_formato = &mutex_formato;
+
+    pthread_t *threads = malloc((size_t) qtd_threads * sizeof(pthread_t));
+
+    if (threads == NULL) {
+        reportar_erro("Erro ao alocar memoria para as threads (pthreads2)");
+        pthread_mutex_destroy(&mutex_formato);
+        free(linhas_texto);
+        free(imagem);
+        return 1;
+    }
+
     for (int i = 0; i < qtd_threads; i++) {
 
-    args[i].imagem = imagem;
-    args[i].largura = largura;
-    args[i].altura = altura;
-    args[i].max_iteracao = max_iteracao;
-    args[i].proxima_linha = &proxima_linha;
-    args[i].mutex = &mutex;
-
-    int retorno = pthread_create(&threads[i], NULL, thread_dinamica, &args[i]);
+        int retorno = pthread_create(&threads[i], NULL, thread_formatadora, &dados);
 
         if (retorno != 0) {
-            reportar_erro("Erro ao criar thread (pthreads2)");
-            free(args);
+            reportar_erro("Erro ao criar thread formatadora (pthreads2)");
             free(threads);
-            pthread_mutex_destroy(&mutex);
+            pthread_mutex_destroy(&mutex_formato);
+            free(linhas_texto);
             free(imagem);
             return 1;
         }
+
     }
 
     for (int i = 0; i < qtd_threads; i++) {
         pthread_join(threads[i], NULL);
     }
 
-    free(args);
     free(threads);
 
-    pthread_mutex_destroy(&mutex);
+    pthread_mutex_destroy(&mutex_formato);
 
     clock_gettime(CLOCK_MONOTONIC, &fim);
 
-    int retorno_gerar = gera_pgm(imagem, largura, altura, "mandelbrot_lhass_pthreads2.pgm");
+    FILE *arquivo_pgm = fopen("mandelbrot_lhass_pthreads2.pgm", "w");
 
-    if (retorno_gerar != 0) {
-        reportar_erro("Erro ao gerar pgm (pthreads2)");
+    if (arquivo_pgm == NULL) {
+        reportar_erro("Erro ao gerar pgm pthreads2");
+        for (int linha = 0; linha < altura; linha++) {
+            free(linhas_texto[linha]);
+        }
+        free(linhas_texto);
         free(imagem);
         return 1;
     }
+
+    for (int linha = 0; linha < altura; linha++) {
+        fputs(linhas_texto[linha], arquivo_pgm);
+        free(linhas_texto[linha]);
+    }
+
+    fclose(arquivo_pgm);
+    free(linhas_texto);
 
     double tempo_gasto = (fim.tv_sec - inicio.tv_sec) + ((fim.tv_nsec - inicio.tv_nsec) / 1e9);
 

@@ -377,3 +377,25 @@ Script started on 2026-09-01 07:07:20-03:00 [TERM="xterm-256color" TTY="/dev/pts
 [?2004lexit
 
 Script done on 2026-09-01 07:16:10-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-02 21:36:32-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="101" LINES="20"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ .[Kj[K./mandelbrot 1500 10[K500 10000 2
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ ./mandelbrot 1000 1000 20[K000 2
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ [K]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ .[Kexity
+[?2004lexity: command not found
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-02 22:13:56-03:00 [COMMAND_EXIT_CODE="127"]
+Script started on 2026-09-02 22:41:45-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="86" LINES="20"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ make clean
+[?2004lrm -f mandelbrot *.pgm times.txt erros.txt
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ make
+[?2004lgcc -Wall -Wextra -fopenmp -o mandelbrot mandelbrot.c mandelbrot_base.c mandelbrot_serial.c mandelbrot_openmp.c mandelbrot_pthreads1.c mandelbrot_pthreads2.c -lpthread
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ ,[K./mandelbrot 1000 1000 1000 [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K20000[K[K[K[K[K15[K[K1[K12000 12000 1[K5[K10000 15[K4[K2
+[?2004l^C
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-02 23:06:32-03:00 [COMMAND_EXIT_CODE="130"]
