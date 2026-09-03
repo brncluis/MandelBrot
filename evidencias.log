@@ -399,3 +399,22 @@ Script started on 2026-09-02 22:41:45-03:00 [TERM="xterm-256color" TTY="/dev/pts
 [?2004lexit
 
 Script done on 2026-09-02 23:06:32-03:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2026-09-02 23:06:40-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="86" LINES="20"]
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ git commi[K[K[K[K[Kadd .
+[?2004l[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ git commit -m "correca do phtredf[K[Kads2 para tr[K[Kcibv[K[K[Konver sao de cada pixelc[K calculado  [Kpro p[K.[Kpgmn [K[Km,[K[K"
+[?2004l[main 1d50d50] correca do phtreads2 para conversao de cada pixel calculado pro pgm
+ 3 files changed, 124 insertions(+), 48 deletions(-)
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ go[Kit push
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.81 KiB | 1.81 MiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To https://github.com/brncluis/MandelBrot.git
+   5508564..1d50d50  main -> main
+[?2004h]0;brncluis@luisdesktop: ~/Projetos/lhass[01;32mbrncluis@luisdesktop[00m:[01;34m~/Projetos/lhass[00m$ g[Kexot[K[Kit
+[?2004lexit
+
+Script done on 2026-09-02 23:07:52-03:00 [COMMAND_EXIT_CODE="0"]
